@@ -10,4 +10,3 @@ class PostsController < ApplicationController
     # Code to fetch and display details of a single post
   end
 end
-
