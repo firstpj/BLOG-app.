@@ -49,10 +49,9 @@ Additionally, the application functions as a standard blog website, offering a c
 
 > The key features of this project includes.
 
-- **Display Users**
-- **Display Posts**
-- **Display Likes on Posts**
-- **Display Comments on Posts**
+- **[Showcase Posts]**
+- **[Add comments]**
+- **[Add likes]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +110,17 @@ Example command:
 
 ### Run tests
 
-- Tests are not available yet, please stay tuned for it.
+-To run tests, run the following command:
+
+```sh
+  rubocop --color
+```
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+```sh
+  rspec
+```
 
 ### Deployment
 
