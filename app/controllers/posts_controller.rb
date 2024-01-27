@@ -22,15 +22,19 @@ class PostsController < ApplicationController
   end
 
   def create
-    @user = current_user
-    @post = @user.posts.new(post_params)
+    @post = Post.new(post_params)
+    @post.author_id = current_user.id
+    @post.likes_counter = 0
+    @post.comments_counter = 0
     if @post.save
-      redirect_to user_post_path(@user, @post)
+      @user = User.find(params[:user_id])
+      redirect_to user_post_path(@user, @post), notice: 'Post was successfully created.'
     else
-      puts @user
-      puts @post.errors.full_messages
-      flash.now[:errors] = 'Invalid post!'
-      render :new
+
+      pp @post.errors
+      pp @post.errors.full_messages
+      @user = User.find(params[:user_id])
+      render 'new'
     end
   end
 
