@@ -18,6 +18,7 @@ Rails.application.configure do
   config.eager_load = ENV['CI'].present?
 
   # Configure public file server for tests with Cache-Control for performance.
+
   config.public_file_server.enabled = true
   config.public_file_server.headers = {
     'Cache-Control' => 'public, max-age=#{1.hour.to_i}'
@@ -42,6 +43,7 @@ Rails.application.configure do
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
+
   config.action_mailer.delivery_method = :test
 
   # Print deprecation notices to the stderr.
@@ -54,6 +56,7 @@ Rails.application.configure do
   config.active_support.disallowed_deprecation_warnings = []
 
   # Raises error for missing translations.
+
   # config.i18n.raise_on_missing_translations = true
 
   # Annotate rendered view with file names.

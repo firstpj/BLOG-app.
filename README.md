@@ -21,9 +21,9 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
+
 
 # Blog App <a name="about-project"></a>
 
@@ -44,7 +44,6 @@ Additionally, the application functions as a standard blog website, offering a c
   </ul>
 </details>
 
-<!-- Features -->
 ### Key Features <a name="key-features"></a>
 
 - **[Showcase Posts]**
@@ -85,33 +84,31 @@ Clone this repository to your desired folder:
   cd Blog app
 git clone https://git@github.com:firstpj/BLOG-appllication.git
 ...
-### Install
-
 Install this project with:
-
-Example command:
-
-```sh
-  cd blog-app
-```
-
-### Usage
-
 To run the project, execute the following command:
 
-Example command:
-
-```sh
-  rails s
-```
 
 ### Run tests
+
 
 - Tests are not available yet, please stay tuned for it.
 
 ### Deployment
 
 - Deployment is not applicable in this project at the moment.
+
+To run tests, run the following command:
+
+```sh
+  rubocop --color
+```
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+```sh
+  rspec
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,6 +154,7 @@ If you like this project please show support by staring ⭐️.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 * I extend my deepest thanks to Microverse for welcoming me into the Full-time Software Development program..
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

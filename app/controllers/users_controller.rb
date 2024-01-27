@@ -11,5 +11,4 @@ class UsersController < ApplicationController
       flash[:alert] = 'User not found'
       redirect_to root_path
     end
-  end
 end
