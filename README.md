@@ -1,6 +1,6 @@
-<a name="readme-top"></a>
+# Blog-app
 
-<!-- TABLE OF CONTENTS -->
+<a name="readme-top"></a>
 
 # 📗 Table of Contents
 
@@ -8,27 +8,26 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# Blog App <a name="about-project"></a>
+# 📖 [Blog-app] <a name="about-project"></a>
 
-A **Ruby blog app** The web application is designed to enable users to create, edit, and publish blog posts. It is developed using the Ruby on Rails framework, a popular choice known for its speed and user-friendly features in web application development.
-
-Additionally, the application functions as a standard blog website, offering a comprehensive and functional platform. Users can browse a collection of articles and interact with them by leaving comments and expressing their appreciation through features like liking posts.
+**[Blog-app]**It's a lively website that presents a range of posts in an interactive format. Visitors have the opportunity to interact with the content through comments and likes, contributing to the creation of a lively online community.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,9 +36,7 @@ Additionally, the application functions as a standard blog website, offering a c
 <details>
   <summary>Ruby on Rails</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
-    <li><a href="https://rubyonrails.org/">Rails</a></li>
-    <li><a href="https://rubocop.org/">Rubocop</li>
+    <li><a>https://rubyonrails.org/</a></li>
   </ul>
 </details>
 
@@ -47,18 +44,9 @@ Additionally, the application functions as a standard blog website, offering a c
 
 ### Key Features <a name="key-features"></a>
 
-> The key features of this project includes.
-
 - **[Showcase Posts]**
 - **[Add comments]**
 - **[Add likes]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-
-The Live Demo of this Project will be available soo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,45 +60,57 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<ul>
-    <li><p>A code editor (Visual Studio Code is recommended)</p></li>
-</ul>
-
-<ul>
-    <li><p>Git and a GitHub account</p></li>
-</ul>
+- Install Ruby
+- Install Rails
+- Install Postgresql
 
 ### Setup
 
-Clone this repository to your desired folder by using this 👇️ command :
+Clone this repository to your desired folder:
 
-```
-git clone https://github.com/firstpj/blog-app.git
+```sh
+  cd Blog app
+  git clone git@github.com:firstpj/BLOG-appllication.git
 ```
 
 ### Install
 
 Install this project with:
 
-Example command:
-
 ```sh
-  cd blog-app
+  cd Blog app
+  bundle install
+```
+```sh
+  gem install rspec
+```
+```sh
+  gem install --no-document rubocop -v '>= 1.0, < 2.0'
+```
+```sh
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
 
 ### Usage
 
 To run the project, execute the following command:
 
-Example command:
-
 ```sh
-  rails s
+  rails db:create
+```
+```sh
+  rails db:migrate
+```
+```sh
+  rake db:migrate
+```
+```sh
+  rails server
 ```
 
 ### Run tests
 
--To run tests, run the following command:
+To run tests, run the following command:
 
 ```sh
   rubocop --color
@@ -124,7 +124,7 @@ Example command:
 
 ### Deployment
 
-- Deployment is not applicable in this project at the moment.
+  - [N/A]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,6 +132,7 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 👤 **Collins Akorda**
+
 - GitHub: [@firstpj](https://github.com/firstpj)
 - Twitter: [@AkordaC](https://twitter.com/AkordaC)
 - LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
@@ -142,19 +143,7 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Here are some future features that could be added to the Blog app in the future.
-
-- **AI-powered writing tools:** These tools can help bloggers with tasks such as brainstorming ideas, generating content, and editing their work.
-
-- **Integration with other social media platforms:** This would allow bloggers to easily share their content on other platforms, such as Twitter, Facebook, and LinkedIn.
-
-- **Support for multiple languages:** This would make the Blog app accessible to a wider audience.
-
-- **Advanced analytics features:** These features would help bloggers track the performance of their content and understand their audience better.
-
-- **Collaboration tools:** These tools would allow bloggers to collaborate with other writers, editors, and designers.
-
-These are just a few ideas for future features that could be added to the Blog app. The specific features that are added will depend on the needs and wants of the users.
+- [ ] **[Add delete feature]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,7 +153,7 @@ These are just a few ideas for future features that could be added to the Blog a
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Zuwairanajma/Blog_App/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +161,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a star⭐️ or a thumbs up 👍 if you like this project! You can visit my GitHub profile for more of my projects.
+If you like this project please show support by staring ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,8 +169,7 @@ Give a star⭐️ or a thumbs up 👍 if you like this project! You can visit my
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Project supervised by [Microverse](https://www.microverse.org/)
-- [Creative Commons 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/)
+* I would like to give Microverse my sincerest gratitude for accommodating me in the Full-time Software Development program.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
