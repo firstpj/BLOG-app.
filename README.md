@@ -1,3 +1,4 @@
+# Blog=app
 <a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
@@ -44,15 +45,13 @@ Additionally, the application functions as a standard blog website, offering a c
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-> The key features of this project includes.
+- **[Showcase Posts]**
+- **[Add comments]**
+- **[Add likes]**
 
-- **Display Users**
-- **Display Posts**
-- **Display Likes on Posts**
-- **Display Comments on Posts**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,10 +83,8 @@ Clone this repository to your desired folder:
 
 ```sh
   cd Blog app
-```
-git clone https://github.com/firstpj/blog-app.git
-```
-
+git clone https://git@github.com:firstpj/BLOG-appllication.git
+...
 ### Install
 
 Install this project with:
@@ -122,6 +119,7 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 👤 **Collins Akorda**
+
 - GitHub: [@firstpj](https://github.com/firstpj)
 - Twitter: [@AkordaC](https://twitter.com/AkordaC)
 - LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
@@ -132,19 +130,7 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Here are some future features that could be added to the Blog app in the future.
-
-- **AI-powered writing tools:** These tools can help bloggers with tasks such as brainstorming ideas, generating content, and editing their work.
-
-- **Integration with other social media platforms:** This would allow bloggers to easily share their content on other platforms, such as Twitter, Facebook, and LinkedIn.
-
-- **Support for multiple languages:** This would make the Blog app accessible to a wider audience.
-
-- **Advanced analytics features:** These features would help bloggers track the performance of their content and understand their audience better.
-
-- **Collaboration tools:** These tools would allow bloggers to collaborate with other writers, editors, and designers.
-
-These are just a few ideas for future features that could be added to the Blog app. The specific features that are added will depend on the needs and wants of the users.
+- [ ] **[Add delete feature]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +140,7 @@ These are just a few ideas for future features that could be added to the Blog a
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](git@github.com:firstpj/BLOG-appllication.git).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,7 +148,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a star⭐️ or a thumbs up 👍 if you like this project! You can visit my GitHub profile for more of my projects.
+If you like this project please show support by staring ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,8 +156,7 @@ Give a star⭐️ or a thumbs up 👍 if you like this project! You can visit my
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Project supervised by [Microverse](https://www.microverse.org/)
-- [Creative Commons 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/)
+* I extend my deepest thanks to Microverse for welcoming me into the Full-time Software Development program..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
