@@ -1,6 +1,7 @@
-# Blog-app
-
+# Blog=app
 <a name="readme-top"></a>
+
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -8,26 +9,27 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog-app] <a name="about-project"></a>
 
-**[Blog-app]**It's a lively website that presents a range of posts in an interactive format. Visitors have the opportunity to interact with the content through comments and likes, contributing to the creation of a lively online community.
+# Blog App <a name="about-project"></a>
+
+A **Ruby blog app** The web application is designed to enable users to create, edit, and publish blog posts. It is developed using the Ruby on Rails framework, a popular choice known for its speed and user-friendly features in web application development.
+
+Additionally, the application functions as a standard blog website, offering a comprehensive and functional platform. Users can browse a collection of articles and interact with them by leaving comments and expressing their appreciation through features like liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -36,11 +38,11 @@
 <details>
   <summary>Ruby on Rails</summary>
   <ul>
-    <li><a>https://rubyonrails.org/</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Rails</a></li>
+    <li><a href="https://rubocop.org/">Rubocop</li>
   </ul>
 </details>
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -50,7 +52,17 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
+
+The Live Demo of this Project will be available soon.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -70,45 +82,11 @@ Clone this repository to your desired folder:
 
 ```sh
   cd Blog app
-  git clone git@github.com:firstpj/BLOG-appllication.git
-```
-
-### Install
-
+git clone https://git@github.com:firstpj/BLOG-appllication.git
+...
 Install this project with:
-
-```sh
-  cd Blog app
-  bundle install
-```
-```sh
-  gem install rspec
-```
-```sh
-  gem install --no-document rubocop -v '>= 1.0, < 2.0'
-```
-```sh
-  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
-
-### Usage
-
 To run the project, execute the following command:
 
-```sh
-  rails db:create
-```
-```sh
-  rails db:migrate
-```
-```sh
-  rake db:migrate
-```
-```sh
-  rails server
-```
-
-### Run tests
 
 To run tests, run the following command:
 
@@ -149,7 +127,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Zuwairanajma/Blog_App/issues).
+Feel free to check the [issues page](git@github.com:firstpj/BLOG-appllication.git).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,7 +143,8 @@ If you like this project please show support by staring ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-* I would like to give Microverse my sincerest gratitude for accommodating me in the Full-time Software Development program.
+* I extend my deepest thanks to Microverse for welcoming me into the Full-time Software Development program..
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

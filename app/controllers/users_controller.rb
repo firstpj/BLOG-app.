@@ -1,11 +1,15 @@
 class UsersController < ApplicationController
-  # GET /users or /users.json
   def index
-    # Code to fetch and display a list of all users
+    @users = User.all
   end
 
-  # GET /users/1 or /users/1.json
   def show
-    # Code to fetch and display details of a single user
+    @user = User.find_by_id(params[:id])
+    if @user
+      @recent_posts = @user.most_recent_posts
+    else
+      flash[:alert] = 'User not found'
+      redirect_to root_path
+    end
   end
 end
