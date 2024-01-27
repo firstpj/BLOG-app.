@@ -88,15 +88,6 @@ Install this project with:
 To run the project, execute the following command:
 
 
-### Run tests
-
-
-- Tests are not available yet, please stay tuned for it.
-
-### Deployment
-
-- Deployment is not applicable in this project at the moment.
-
 To run tests, run the following command:
 
 ```sh
