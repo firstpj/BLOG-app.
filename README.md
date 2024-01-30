@@ -27,7 +27,7 @@
 
 # 📖 [Blog-app] <a name="about-project"></a>
 
-**[Blog-app]**It's a lively website that presents a range of posts in an interactive format. Visitors have the opportunity to interact with the content through comments and likes, contributing to the creation of a lively online community.
+**[Blog-app]** is a dynamic and interactive website that showcases a variety of posts. Users can engage with the content by adding comments and liking posts, fostering a vibrant community.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd Blog app
-  git clone git@github.com:firstpj/BLOG-appllication.git
+  git clone https://github.com/Zuwairanajma/Blog-App.git
 ```
 
 ### Install
@@ -122,16 +122,22 @@ To run tests, run the following command:
   rspec
 ```
 
+### Deployment
+
+  - [N/A]
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-👤 **Collins Akorda**
 
-- GitHub: [@firstpj](https://github.com/firstpj)
-- Twitter: [@AkordaC](https://twitter.com/AkordaC)
-- LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
+👤 **Author1**
+ *[Zuwaira Sadiq]*
+
+- GitHub: [@Zuwairanajma](https://github.com/Zuwairanajma)
+- Twitter: [@SadiqJuwairiyya](https://twitter.com/SadiqJuwairiyya)
+- LinkedIn: [Zuwaira Sadiq](https://www.linkedin.com/in/zuwaira-sadiq-566b891b0?)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
