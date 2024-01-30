@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   describe 'Comment model' do
-    user1 = User.create(name: 'Akorda Collins', photo_link: 'juwairiyya.jpeg',
+    user1 = User.create(name: 'Akorda Collins', photo_link: .jpeg',
                         bio: 'Video editor, programmer and HR officer', posts_counter: 0)
     user2 = User.create(name: 'Aisha Walida', photo_link: 'aisha.jpeg',
                         bio: 'she loves to design henna and have fun', posts_counter: 0)
