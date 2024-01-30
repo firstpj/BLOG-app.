@@ -1,62 +1,52 @@
 class PostsController < ApplicationController
-  # Index action to list all posts
   def index
+    @posts = Post.includes(:author).where(author_id: params[:user_id])
     @user = User.find(params[:user_id])
-    # Preloads the comments and likes for each post to avoid N+1 queries
-    @posts = @user.posts.includes(:comments, :likes).order(created_at: :desc).paginate(page: params[:page],
-                                                                                       per_page: 10)
+    @posts = @posts.paginate(page: params[:page], per_page: 3)
   end
 
-  # Show action to display a single post for a specific user
   def show
-    @user = User.find(params[:user_id])
-    @post = @user.posts.find(params[:id])
+    @post = Post.includes(:author).find_by(author_id: params[:user_id], id: params[:id])
+
+    if @post
+      @user = @post.author
+      @comments = @post.comments
+
+    else
+      flash[:alert] = 'Post not found'
+      redirect_to user_posts_path(params[:user_id])
+    end
   end
 
-  # New action to display the post creation form
   def new
-    @user = User.find(params[:user_id])
+    @user = current_user
     @post = Post.new
   end
 
-  # Create action to handle post creation
   def create
-    @post = Post.new(post_params)
-    @post.author_id = current_user.id
-    @post.likes_counter = 0
-    @post.comments_counter = 0
+    @user = current_user
+    @post = @user.posts.new(post_params)
     if @post.save
-      @user = User.find(params[:user_id])
-      redirect_to user_post_path(@user, @post), notice: 'Post was successfully created.'
+      redirect_to user_post_path(@user, @post)
     else
-
-      pp @post.errors
-      pp @post.errors.full_messages
-      @user = User.find(params[:user_id])
-      render 'new'
+      puts @user
+      puts @post.errors.full_messages
+      flash.now[:errors] = 'Invalid post!'
+      render :new
     end
   end
 
-  # Edit action to display the post edit form
-  def edit
-    @post = Post.find(params[:id])
-  end
-
-  # Update action to handle post updates
-  def update
-    @post = Post.find(params[:id])
-    if @post.update(post_params)
-      redirect_to @post, notice: 'Post was successfully updated.'
-    else
-      render 'edit'
-    end
-  end
-
-  # Destroy action to delete a post
   def destroy
-    @post = Post.find(params[:id])
+    @post = Post.find_by(author_id: params[:user_id], id: params[:id])
     @post.destroy
-    redirect_to posts_path, notice: 'Post was successfully deleted.'
+
+    if @post.destroyed?
+      flash[:notice] = 'Post deleted!'
+      redirect_to user_posts_path(@post.author)
+    else
+      flash.now[:errors] = 'Unable to delete post!'
+      redirect_to user_post_path(@post.author, @post)
+    end
   end
 
   private
