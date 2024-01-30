@@ -133,11 +133,11 @@ To run tests, run the following command:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Author1**
- *[Zuwaira Sadiq]*
+👤 **Collins Akorda**
 
-- GitHub: [@Zuwairanajma](https://github.com/Zuwairanajma)
-- Twitter: [@SadiqJuwairiyya](https://twitter.com/SadiqJuwairiyya)
-- LinkedIn: [Zuwaira Sadiq](https://www.linkedin.com/in/zuwaira-sadiq-566b891b0?)
+- GitHub: [@firstpj](https://github.com/firstpj)
+- Twitter: [@AkordaC](https://twitter.com/AkordaC)
+- LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
