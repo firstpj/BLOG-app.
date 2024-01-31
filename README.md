@@ -27,7 +27,7 @@
 
 # 📖 [Blog-app] <a name="about-project"></a>
 
-**[Blog-app]**It's a lively website that presents a range of posts in an interactive format. Visitors have the opportunity to interact with the content through comments and likes, contributing to the creation of a lively online community.
+**[Blog-app]**A dynamic and interactive website is presented, featuring a diverse array of posts. Users have the opportunity to interact with the content through comments and likes, nurturing an active and lively community.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd Blog app
-  git clone git@github.com:firstpj/BLOG-appllication.git
+  git clone https://git@github.com:firstpj/BLOG-appllication.git
 ```
 
 ### Install
@@ -122,16 +122,18 @@ To run tests, run the following command:
   rspec
 ```
 
+### Deployment
+
+  - [N/A]
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-👤 **Collins Akorda**
 
-- GitHub: [@firstpj](https://github.com/firstpj)
-- Twitter: [@AkordaC](https://twitter.com/AkordaC)
-- LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
+👤 **Author1**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,8 +150,6 @@ To run tests, run the following command:
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/Zuwairanajma/Blog_App/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
