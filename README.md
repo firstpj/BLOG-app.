@@ -27,7 +27,7 @@
 
 # 📖 [Blog-app] <a name="about-project"></a>
 
-**[Blog-app]**It's a lively website that presents a range of posts in an interactive format. Visitors have the opportunity to interact with the content through comments and likes, contributing to the creation of a lively online community.
+**[Blog-app]**A dynamic and interactive website is presented, featuring a diverse array of posts. Users have the opportunity to interact with the content through comments and likes, nurturing an active and lively community.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -121,6 +121,10 @@ To run tests, run the following command:
 ```sh
   rspec
 ```
+
+### Deployment
+
+  - [N/A]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
