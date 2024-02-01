@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd Blog app
-  git clone git@github.com:firstpj/BLOG-appllication.git
+  git clone git@github.com:firstpj/BLOG-application.git
 ```
 
 ### Install
