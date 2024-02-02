@@ -1,29 +1,16 @@
-<div class="posts-show">
-<div class="post-show">
-
-<div class="post-title-show">
-<h1><%= @post.title %></h1>
-
-<div class="post-interact">
-<p>comments: <%= @post.comments_counter %></p>
-<p>likes: <%= @post.likes_counter %></p>
+<div class="show-page">
+<div class="users">
+<%= render 'shared/user', user:@user %>
 </div>
-</div>
-
 <div>
-<p><%= @post.text %></p>
+    <%= @user.bio%>
 </div>
 
-</div>
-<div class= "shared-comment-cont">
-<div class="shared-comments">
-<%= link_to "Add Comment", new_user_post_comment_path(@user, @post) %>
-<%= form_with url: user_post_likes_path(@post.author.id, @post.id) do |form| %>
-<%= form.submit 'Like' %>
+<div class="posts">
+<h2>Recent Posts</h2>
+<% @recent_posts.each do |post| %>
+<%= render 'shared/post', post:post, user:@user %>
 <% end %>
 </div>
-<h2>Comments</h2>
-<%= render "shared/comments", comments:@comments %>
-</div>
-
+<%=link_to 'See all posts', user_posts_path(@user) %>
 </div>

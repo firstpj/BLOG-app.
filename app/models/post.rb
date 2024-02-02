@@ -17,3 +17,15 @@ class Post < ApplicationRecord
     author.increment!(:posts_counter)
   end
 end
+
+private
+
+def increment_user_posts_counter
+  author.increment!(:posts_counter)
+end
+
+def set_defaults
+  self.likes_counter ||= 0
+  self.comments_counter ||= 0
+end
+end
