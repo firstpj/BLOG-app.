@@ -27,7 +27,7 @@
 
 # 📖 [Blog-app] <a name="about-project"></a>
 
-**[Blog-app]**A dynamic and interactive website is presented, featuring a diverse array of posts. Users have the opportunity to interact with the content through comments and likes, nurturing an active and lively community.
+**[Blog-app]**It's a lively website that presents a range of posts in an interactive format. Visitors have the opportunity to interact with the content through comments and likes, contributing to the creation of a lively online community.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd Blog app
-  git clone https://git@github.com:firstpj/BLOG-appllication.git
+  git clone git@github.com:firstpj/BLOG-application.git
 ```
 
 ### Install
@@ -122,20 +122,22 @@ To run tests, run the following command:
   rspec
 ```
 
-### Deployment
-
-  - [N/A]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+👤 **Collins Akorda**
 
-👤 **Author1**
+- GitHub: [@firstpj](https://github.com/firstpj)
+- Twitter: [@AkordaC](https://twitter.com/AkordaC)
+- LinkedIn: [Collins Akorda](https://www.linkedin.com/in/collins-akorda-bb46b2232/)
 
+👤 **Reem Mohammed**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: [@githubhandle](https://github.com/ReemMohamedAbdelfatah)
+- Twitter: [@twitterhandle](https://twitter.com/ReemMoh67016126)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/reemmuhammad)
 
 <!-- FUTURE FEATURES -->
 
