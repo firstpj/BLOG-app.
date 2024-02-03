@@ -79,4 +79,3 @@ gem 'devise', '~> 4.9'
 gem 'rswag'
 gem 'rswag-api'
 gem 'rswag-ui'
-
