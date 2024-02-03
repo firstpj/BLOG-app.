@@ -2,6 +2,15 @@ Rails.application.routes.draw do
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
 
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [] do
+        resources :posts, only: [:index] do
+          resources :comments, only: [:index, :new, :create]
+        end
+      end
+    end
+  end
   devise_for :users
 
   resources :users, only: [:index, :show] do
@@ -16,14 +25,4 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "users#index"
 
-  namespace :api do
-    namespace :v1 do
-      resources :users, only: [] do
-        resources :posts, only: [:index] do
-          resources :comments, only: [:index, :new, :create]
-        end
-      end
-    end
-  end
 end
-

@@ -1,20 +1,27 @@
-require 'rails_helper'
+class Post < ApplicationRecord
+  validates :title, presence: true, length: { maximum: 250 }
+  validates :comments_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :likes_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
-RSpec.describe Like, type: :model do
-  describe 'Like model' do
-    it 'should increase likes count on the post' do
-      user1 = User.create(name: 'Juwairiyya Sadiq', photo_link: 'juwairiyya.jpeg',
-                          bio: 'Digital Marketer, programmer and HR Officer', posts_counter: 0)
-      user2 = User.create(name: 'Aisha Walida', photo_link: 'aisha.jpeg',
-                          bio: 'she loves to design henna and have fun', posts_counter: 0)
-      post = Post.create(title: 'MoonLight', text: 'I love moonlight serenity', author: user1, likes_counter: 5,
-                         comments_counter: 2)
-      like = Like.create(post:, user: user2)
+  belongs_to :author, class_name: 'User'
+  has_many :likes, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
-      expect do
-        like.increment_likes_counter
-        post.reload
-      end.to change(post, :likes_counter).by(1)
-    end
+  before_create :increment_user_posts_counter
+  before_create :set_defaults
+
+  def recent_comments
+    comments.order(created_at: :desc).limit(5)
+  end
+
+  private
+
+  def increment_user_posts_counter
+    author.increment!(:posts_counter)
+  end
+
+  def set_defaults
+    self.likes_counter ||= 0
+    self.comments_counter ||= 0
   end
 end

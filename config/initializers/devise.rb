@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '7880ee75e6b43a1d6d71411eff49d57fed5dbfcd19587692899dae512a3644c3a8bd14e6df56dab497c817c9bd15c6b6096ff57f1e0ed62344b7f6fbabdf37b8'
+  # config.secret_key = 'dd565c700b79a2bfe39d8d058f58f8fe616059e5fdac01672ee40560648cc2edf23345e9aef1f0f8fa840bf67ddd1a939376ed441b9d1ed593fdf02ddf325695'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '7b98e13942c48455de8bd87c6676e0e3ee0c7de907e2a0fb84ccb3e2d63f1addafd09d157e29a42d2c88ad20111f8cbbac79bcf5dc3c9729c3837abb371ea1a3'
+  # config.pepper = 'ff127dd04e7d6c0563323e582ec5dd2ddf76c1d116216971883b4fd297984347285892a6bbe505fb17037433ad833749221f9c0e6544f13f94448be783366b3e'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -143,7 +143,8 @@ Devise.setup do |config|
   # without confirming their account.
   # Default is 0.days, meaning the user cannot access the website without
   # confirming their account.
-  # config.allow_unconfirmed_access_for = 2.days
+  # config.allow_unconfirmed_access_for = 30.days
+  config.allow_unconfirmed_access_for = nil
 
   # A period that the user is allowed to confirm their account before their
   # token becomes invalid. For example, if set to 3.days, the user can confirm
@@ -310,5 +311,5 @@ Devise.setup do |config|
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
-  # Use letter_opener for email delivery in development
 end
+

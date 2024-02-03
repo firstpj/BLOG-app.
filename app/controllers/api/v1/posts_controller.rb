@@ -1,7 +1,8 @@
 class Api::V1::PostsController < ApplicationController
-  skip_before_action :authenticate_user!
+  # skip_before_action :authenticate_user!
   protect_from_forgery with: :null_session
   protect_from_forgery with: :exception, except: [:create]
+  skip_before_action :verify_authenticity_token, only: [:create]
 
   def index
     @posts = Post.includes(:author).where(author_id: params[:user_id])
@@ -20,5 +21,4 @@ class Api::V1::PostsController < ApplicationController
     params.require(:post).permit(:title, :content, :comments_counter, :likes_counter)
   end
 
-  skip_before_action :verify_authenticity_token, only: [:create]
 end
